@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Customer Feedback</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">      
+		<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">		
+		<link href="themes/css/bootstrappage.css" rel="stylesheet"/>
+		<link href="themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="themes/css/main.css" rel="stylesheet"/>
+		<link href="themes/css/over.css" rel="stylesheet"/>
+
+		<script src="themes/js/jquery-1.7.2.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>				
+		<script src="themes/js/superfish.js"></script>	
+		<script src="themes/js/jquery.scrolltotop.js"></script>
+		
+	</head>
+    <body>		
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu" id="navbar">
+				<div class="navbar-inner main-menu">
+				 <p class="logo pull-left" id="superstore">FEEDBACK</p>
+				  <div id="menu" class="pull-right">
+				  	<a href="./index.html" class="menuOptions">Home</a>
+				  	<a href="./contact.html" class="menuOptions">Contact Us</a>
+					<a href="./feedback.html" class="menuOptions">Feedback</a>
+					<a href="./about.html" class="menuOptions">About Us</a>
+				  </div>	
+				 </div>
+			</section>										
+			
+			<section class="header_text sub">
+			
+				<h2 id="custFeedHead"><span>Customer Feedback Form</span></h2>
+			</section>
+			<section class="main-content">				
+				<div class="row">				
+					<div class="span5">
+						<div id="custFeedback">
+							<div>
+							<img src="./themes/images/customer.jpg" align="left" id="img3">
+							
+							</div>
+							<a href="feedback2.jsp" id="linkFeed">What our customers have to say about us</a>
+							
+						</div>
+					</div>
+					<div class="span7">
+						
+						<form method="post" action="thank.jsp">
+							<fieldset>
+								<div class="clearfix">
+									<label for="name"><span>Name:</span></label>
+									<div class="input">
+										<input tabindex="1" size="18" id="name" name="name" type="text" value="" class="input-xlarge" placeholder="Name">
+									</div>
+								</div>
+								
+<!--								<div class="clearfix">
+									<label for="email"><span>Email:</span></label>
+									<div class="input">
+										<input tabindex="2" size="25" id="email" name="email" type="text" value="" class="input-xlarge" placeholder="Email Address">
+									</div>
+								</div>-->
+
+								<br/>
+
+								<div class="clearfix">
+									<label for="Ambience"><span>Rate the ambience of the store:</span></label>
+									<div class="input">
+										<input type="radio" name="ambience" value="Excellent" checked>&nbsp;&nbsp;Excellent<br/>
+										<input type="radio" name="ambience" value="Good">&nbsp;&nbsp;Good<br/>
+										<input type="radio" name="ambience" value="Average">&nbsp;&nbsp;Average<br/>
+										<input type="radio" name="ambience" value="Poor">&nbsp;&nbsp;Poor<br/>
+										<input type="radio" name="ambience" value="Dismal">&nbsp;&nbsp;Dismal<br/>
+
+									</div>
+								</div>
+
+								<br/>
+
+								<div class="clearfix">
+									<label for="Service"><span>Rate the service you received:</span></label>
+									<div class="input">
+										<input type="radio" name="service" value="Excellent" checked>&nbsp;&nbsp;Excellent<br/>
+										<input type="radio" name="service" value="Good">&nbsp;&nbsp;Good<br/>
+										<input type="radio" name="service" value="Average">&nbsp;&nbsp;Average<br/>
+										<input type="radio" name="service" value="Poor">&nbsp;&nbsp;Poor<br/>
+										<input type="radio" name="service" value="Dismal">&nbsp;&nbsp;Dismal<br/>
+
+									</div>
+								</div>
+
+								<br/>
+
+								<div class="clearfix">
+									<label for="Clean"><span>Rate the cleanliness of the store:</span></label>
+									<div class="input">
+										<input type="radio" name="clean" value="Excellent" checked>&nbsp;&nbsp;Excellent<br/>
+										<input type="radio" name="clean" value="Good">&nbsp;&nbsp;Good<br/>
+										<input type="radio" name="clean" value="Average">&nbsp;&nbsp;Average<br/>
+										<input type="radio" name="clean" value="Poor">&nbsp;&nbsp;Poor<br/>
+										<input type="radio" name="clean" value="Dismal">&nbsp;&nbsp;Dismal<br/>
+
+									</div>
+								</div>
+
+								<br/>
+
+								<div class="clearfix">
+									<label for="Stock"><span>Rate how well the store was stocked:</span></label>
+									<div class="input">
+										<input type="radio" name="stock" value="Excellent" checked>&nbsp;&nbsp;Excellent<br/>
+										<input type="radio" name="stock" value="Good">&nbsp;&nbsp;Good<br/>
+										<input type="radio" name="stock" value="Average">&nbsp;&nbsp;Average<br/>
+										<input type="radio" name="stock" value="Poor">&nbsp;&nbsp;Poor<br/>
+										<input type="radio" name="stock" value="Dismal">&nbsp;&nbsp;Dismal<br/>
+
+									</div>
+								</div>
+								<br/>
+								
+								<div class="clearfix">
+									<label for="AdditionalRemarks"><span>Additional Remarks:</span></label>
+									<div class="input">
+										<textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7" placeholder="Additional Remarks"></textarea>
+									</div>
+								</div>
+								
+								<div class="actions">
+									<button tabindex="3" type="submit" class="btn btn-inverse">Submit Feedback</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>				
+				</div>
+			</section>			
+			
+		</div>
+		<script src="themes/js/common.js"></script>		
+    </body>
+</html>
